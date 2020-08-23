@@ -1,0 +1,14 @@
+(حدد الصت (لامدا (ق)
+   (ضرب ٤.١٨٩ ق ق ق)))
+
+(حدد صدر (لامدا (غ ق)
+    (إذا (أصغر-أو-يساوي؟ (القيمة-المطلقه (طرح غ ق)) ٠.١)
+        "إ"        
+
+
+(define volume (lambda (rad)
+	(* 4.189 rad rad rad)))
+
+(define compare (lambda (actual expected)
+	(if (<= (abs (- actual expected)) 0.1)
+		"e"

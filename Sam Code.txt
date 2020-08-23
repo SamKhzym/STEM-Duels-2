@@ -1,0 +1,89 @@
+(حدد شكرا (لامدا (أرى نوم)
+    (إذا (أصغر؟(القيمة-المطلقة(طرح أرى نوم)) ٠،١)
+     "إ"
+     (إذا (أصغر؟ أرى نوم )
+       "ب"  
+       "ص" ))))
+
+(حدد سفر (لامدا (رد)
+(ضرب رد رد رد  (قسم ٤ ٣ ) ٣،١٤١٥٩ )))
+
+
+
+(define checkVolume (lambda (volume num)
+	(if (< (abs(- volume num)) 0.1)
+		"e"
+		(if (< volume num)
+			"b"
+			"s"
+		)
+	)
+))
+
+(define volume (lambda (rad)
+	(* rad rad rad (/ 4 3) 3.14159))
+)
+
+=========================================
+
+(قول (سفر ١))
+(قول (سفر ٢))
+(قول (سفر ٣))
+(قول (سفر ٤))
+(قول (سفر ٥))
+
+(write (volume 1))
+(write (volume 2))
+(write (volume 3))
+(write (volume 4))
+(write (volume 5))
+
+=========================================
+
+(قول (شكرا (سفر ١ ) ٤،١٩))
+(قول (شكرا (سفر ١ ) ٤))
+(قول (شكرا (سفر ١ ) ٥))
+
+(write (checkVolume (volume 1) 4.19))
+(write (checkVolume (volume 1) 4))
+(write (checkVolume (volume 1) 5))
+
+
+
+(قول (شكرا (سفر ٢ ) ٣٣،٥١))
+(قول (شكرا (سفر ٢ ) ٣٣))
+(قول (شكرا (سفر ٢ ) ٣٤ ))
+
+(write (checkVolume (volume 2) 33.51))
+(write (checkVolume (volume 2) 33))
+(write (checkVolume (volume 2) 34))
+
+
+
+(قول (شكرا (سفر ٣ ) ١١٣،١٠))
+(قول (شكرا (سفر ٣ ) ١١٢))
+(قول (شكرا (سفر ٣ ) ١١٤))
+
+(write (checkVolume (volume 3) 113.10))
+(write (checkVolume (volume 3) 112))
+(write (checkVolume (volume 3) 114))
+
+
+
+(قول (شكرا (سفر ٤) ٢٦٨،٠٨))
+(قول (شكرا (سفر ٤) ٢٦٧))
+(قول (شكرا (سفر ٤) ٢٦٩))
+
+(write (checkVolume (volume 4) 268.08))
+(write (checkVolume (volume 4) 267))
+(write (checkVolume (volume 4) 269))
+
+
+
+(قول (شكرا (سفر ٥) ٥٢٣،٦٠))
+(قول (شكرا (سفر ٥) ٥٢٣))
+(قول (شكرا (سفر ٥) ٥٢٤))
+
+(write (checkVolume (volume 5) 523.60))
+(write (checkVolume (volume 5) 523))
+(write (checkVolume (volume 5) 524))
